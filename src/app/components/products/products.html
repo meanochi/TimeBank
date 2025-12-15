@@ -1,0 +1,14 @@
+<p>products works!</p>
+
+@for(p of products; track $index){
+  <div>
+    <h2>{{p.title}}</h2>
+    <p>תיאור: {{p.description}}</p>
+    <p>שעות: {{p.timeValue}}</p>
+    <p>מזהה ספק: {{p.ProviderId}}</p>
+    <p>קטגוריה: {{p.categoryId}}</p>
+    <p>מתי אפשר? {{p.optionalTime}}</p>
+    <img [src]="p.imageUrl" width="200"/>
+  </div>
+}
+<app-add-product (productReady)=addProduct($event)></app-add-product>
