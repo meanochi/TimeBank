@@ -14,5 +14,4 @@ export class CategorySrvice {
     this.newCategory = new Category()
   }
 
-
 }

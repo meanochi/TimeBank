@@ -5,7 +5,7 @@ export class Product {
     title: string = '';
     categoryId: number =0;
     description: string ='';
-    imageUrl: string ='';
+    imageUrl: string | null = null;
     timeValue: number =0;
     ProviderId: number =0;
     optionalTime: string ='';
